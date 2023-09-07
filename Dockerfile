@@ -18,4 +18,4 @@ ENV NAME World
 
 # Run app.py when the container launches
 # change the name of the file
-CMD ["python", "app.py"]
+CMD ["python", "scraping.py"]
