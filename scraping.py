@@ -12,3 +12,12 @@ print(text)
 h2_tags = soup.find_all('h2')
 h2_strings = [tag.string for tag in h2_tags]
 print(h2_strings)
+
+# 最初のh3タグを表示
+text = soup.h3.string
+print(text)
+
+# h2タグの中身を表示
+h3_tags = soup.find_all('h3')
+h3_strings = [tag.string for tag in h3_tags]
+print(h3_strings)
