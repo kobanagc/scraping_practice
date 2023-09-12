@@ -16,6 +16,9 @@ EXPOSE 80
 # Define environment variable
 ENV NAME World
 
+# Install ChromeDriver
+RUN apt-get update && apt-get install -y chromium-driver
+
 # Run app.py when the container launches
 # change the name of the file
 CMD ["python", "scraping.py"]
